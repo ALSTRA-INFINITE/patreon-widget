@@ -58,6 +58,12 @@
   }
 </style>
 </head>
+  <script>
+  window.addEventListener("load", () => {
+    const height = document.body.scrollHeight;
+    window.parent.postMessage({ type: "setHeight", height }, "*");
+  });
+</script>
 <body>
   <a href="https://www.patreon.com/cw/Alstrainfinite" target="_blank">
     <div class="promo">
@@ -71,3 +77,4 @@
   </a>
 </body>
 </html>
+
